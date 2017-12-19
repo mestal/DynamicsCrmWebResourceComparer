@@ -81,9 +81,10 @@ namespace CrmWebResourceCompare
                 folder = folder.Replace(".", "");
                 
                 var publishedFileName = "";
+                var webresourceConstantPrefix = "etel_";
                 if (!mainFolder)
                 {
-                    publishedFileName = $"etel_{folder}";
+                    publishedFileName = $"{webresourceConstantPrefix}{folder}";
                 }
                 else
                 {
