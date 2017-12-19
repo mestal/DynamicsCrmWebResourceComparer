@@ -70,16 +70,16 @@ namespace CrmWebResourceCompare
 
             foreach (var gitFilePath in gitFiles.Where(a => a.ToLower().EndsWith("html") || a.ToLower().EndsWith("htm") || a.ToLower().EndsWith("js") || a.ToLower().EndsWith("css")))
             {
-                //var fileName = GetFileName(gitFilePath);
                 var folder = gitFilePath.Replace(gitPlace, "");
                 bool mainFolder = false;
                 if (!folder.Substring(2).Contains("\\"))
                 {
                     mainFolder = true;
                 }
+                
                 folder = folder.Replace("\\", "");
                 folder = folder.Replace(".", "");
-                //fileName = fileName.Replace(".", "");
+                
                 var publishedFileName = "";
                 if (!mainFolder)
                 {
@@ -89,6 +89,7 @@ namespace CrmWebResourceCompare
                 {
                     publishedFileName = $"{folder}";
                 }
+                
                 try
                 {
                     publishedFileName = FindPublishedFile(publishedWebResourcesPlace, publishedFileName);
@@ -96,7 +97,6 @@ namespace CrmWebResourceCompare
                     if (FileEqualWithoutSpaceCheck(gitFilePath, publishedFileName))
                     {
                         listBoxEquals.Items.Add(gitFilePath.Replace(gitPlace, ""));
-                        //textEquals.Text = textEquals.Text + gitFilePath;
                     }
                     else
                     {
@@ -171,8 +171,8 @@ namespace CrmWebResourceCompare
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            lblGitFolder.Text = @"";
-            lblPublishedWebResourcesFolder.Text = @"";
+            lblGitFolder.Text = "";
+            lblPublishedWebResourcesFolder.Text = "";
         }
 
         //Copy Differents
