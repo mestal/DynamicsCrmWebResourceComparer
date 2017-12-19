@@ -1,0 +1,9 @@
+c:\users\emesalp\documents\visual studio 2015\Projects\CrmWebResourceCompare\CrmWebResourceCompare\bin\Debug\CrmWebResourceCompare.exe.config
+c:\users\emesalp\documents\visual studio 2015\Projects\CrmWebResourceCompare\CrmWebResourceCompare\bin\Debug\CrmWebResourceCompare.exe
+c:\users\emesalp\documents\visual studio 2015\Projects\CrmWebResourceCompare\CrmWebResourceCompare\bin\Debug\CrmWebResourceCompare.pdb
+c:\users\emesalp\documents\visual studio 2015\Projects\CrmWebResourceCompare\CrmWebResourceCompare\obj\Debug\CrmWebResourceCompare.csprojResolveAssemblyReference.cache
+c:\users\emesalp\documents\visual studio 2015\Projects\CrmWebResourceCompare\CrmWebResourceCompare\obj\Debug\CrmWebResourceCompare.Form1.resources
+c:\users\emesalp\documents\visual studio 2015\Projects\CrmWebResourceCompare\CrmWebResourceCompare\obj\Debug\CrmWebResourceCompare.Properties.Resources.resources
+c:\users\emesalp\documents\visual studio 2015\Projects\CrmWebResourceCompare\CrmWebResourceCompare\obj\Debug\CrmWebResourceCompare.csproj.GenerateResource.Cache
+c:\users\emesalp\documents\visual studio 2015\Projects\CrmWebResourceCompare\CrmWebResourceCompare\obj\Debug\CrmWebResourceCompare.exe
+c:\users\emesalp\documents\visual studio 2015\Projects\CrmWebResourceCompare\CrmWebResourceCompare\obj\Debug\CrmWebResourceCompare.pdb
