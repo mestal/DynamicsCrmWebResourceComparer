@@ -21,6 +21,7 @@ namespace CrmWebResourceCompare
 
         }
 
+        //Select Folder
         private void button1_Click(object sender, EventArgs e)
         {
             folderBrowserDialog1.ShowNewFolderButton = false;
@@ -28,6 +29,7 @@ namespace CrmWebResourceCompare
             lblPublishedWebResourcesFolder.Text = folderBrowserDialog1.SelectedPath;
         }
 
+        //Select Folder
         private void button2_Click(object sender, EventArgs e)
         {
             folderBrowserDialog1.ShowNewFolderButton = false;
@@ -35,6 +37,7 @@ namespace CrmWebResourceCompare
             lblGitFolder.Text = folderBrowserDialog1.SelectedPath;
         }
 
+        //Compare
         private void button3_Click(object sender, EventArgs e)
         {
             listBoxEquals.Items.Clear();
@@ -107,23 +110,6 @@ namespace CrmWebResourceCompare
             }
         }
 
-        private bool FileEqual(string file1, string file2)
-        {
-            string[] lines1 = System.IO.File.ReadAllLines(file1);
-            string[] lines2 = System.IO.File.ReadAllLines(file2);
-
-            if (lines1.Length != lines2.Length)
-                return false;
-
-            for (var i = 0; i < lines1.Length; i ++)
-            {
-                if (lines1[i] != lines2[i])
-                    return false;
-            }
-
-            return true;
-        }
-
         private bool FileEqualWithoutSpaceCheck(string file1, string file2)
         {
             string[] lines1 = System.IO.File.ReadAllLines(file1);
@@ -165,8 +151,6 @@ namespace CrmWebResourceCompare
             return filesInDir[0].FullName;
         }
 
-
-
         private string GetFileName(string path)
         {
             var lastIndex = path.LastIndexOf(@"\") + 1;
@@ -181,10 +165,6 @@ namespace CrmWebResourceCompare
             }
             foreach (string d in Directory.GetDirectories(sDir))
             {
-                //foreach (string f in Directory.GetFiles(d))
-                //{
-                //    gitFiles.Add(f);
-                //}
                 LoadGitFiles(d);
             }
         }
@@ -195,6 +175,7 @@ namespace CrmWebResourceCompare
             lblPublishedWebResourcesFolder.Text = @"";
         }
 
+        //Copy Differents
         private void button4_Click(object sender, EventArgs e)
         {
             try
@@ -214,6 +195,7 @@ namespace CrmWebResourceCompare
             }
         }
 
+        //Copy Equals
         private void button5_Click(object sender, EventArgs e)
         {
             try
@@ -233,6 +215,7 @@ namespace CrmWebResourceCompare
             }
         }
 
+        //Copy "Not Founds or Multiple Founds"
         private void button6_Click(object sender, EventArgs e)
         {
             try
@@ -252,6 +235,7 @@ namespace CrmWebResourceCompare
             }
         }
 
+        //Select All Differents
         private void button7_Click(object sender, EventArgs e)
         {
             for(int i = 0;i < listBoxDifferents.Items.Count; i++)
