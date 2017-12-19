@@ -191,8 +191,8 @@ namespace CrmWebResourceCompare
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            lblGitFolder.Text = @"C:\Users\emesalp\Source\Repos\EricssonPos\ERMS\UI\Ericsson.ERMS.TCRMIntegration";
-            lblPublishedWebResourcesFolder.Text = @"C:\Users\emesalp\Desktop\ERMS_18_0_0607\WebResources";
+            lblGitFolder.Text = @"";
+            lblPublishedWebResourcesFolder.Text = @"";
         }
 
         private void button4_Click(object sender, EventArgs e)
